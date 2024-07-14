@@ -13,7 +13,8 @@ def get_cats_info(path):
     except ValueError:
         print("File has wrong data.")
         return 0, 0
-
+    finally:
+        file.close()
 
 
 cats_info = get_cats_info("path/to/cats_file.txt")
