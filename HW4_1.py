@@ -17,8 +17,7 @@ def total_salary(path):
     except ValueError:
         print("File has wrong data.")
         return 0, 0
-    finally:
-        file.close()
+
 
 
 # Приклад використання функції
